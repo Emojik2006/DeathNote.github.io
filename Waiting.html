@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		
+		<style>
+			#time {
+				font-size:100px;
+				font-family:serif;
+				color: blue;
+			}
+		</style>
+		
+		<script>
+			var count = new Number();
+			var count = 40;
+			
+			function start(){
+			
+			if(count>=1){
+				count-=1;
+				time.innerHTML=count;
+				setTimeout("start();", 1000);
+			}
+			
+		   }
+		   
+		   window.addEventListener("load", start);
+		</script>
+		
+	</head>
+	
+	<body>
+	
+	<center>
+		<div id="time"> </div>
+	</center>
+	<p align = "center">After this timer press Kira to view result</p>
+   <a href = "https://raw.githubusercontent.com/Emojik2006/DeathNote/main/A726DFE8-C642-42F0-B929-6DB3C55DE137.jpeg">Kira</a>
+	</body>
+</html>
